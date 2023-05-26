@@ -1,0 +1,45 @@
+div{
+    font-size: 15px;
+    display: none;
+}
+
+@media(max-width: 410px){
+    body{
+        background-color: red;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    div{
+        display: block;
+        
+    }
+}
+
+@media(min-width: 411px) and (max-width:768px){
+    body{
+        background-color: green;
+    }
+    div{
+        display: block;
+    }
+    div:nth-of-type(1){
+        width: 66.66%
+    }
+    div:nth-of-type(2){
+        width: 33.33%;
+    }
+    div:nth-of-type(3){
+        width: 100%;
+    }
+}
+
+@media(min-width: 769px){
+    body{
+        background-color: blue;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    div{
+        display: block;
+    }
+}
